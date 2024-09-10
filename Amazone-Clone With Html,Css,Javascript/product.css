@@ -1,0 +1,596 @@
+body {
+  background: #fff;
+}
+.breadcrum {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #565656;
+}
+.product-display {
+  min-height: 100%;
+  padding: 10px 20px;
+  display: flex;
+}
+.product-d-image {
+  display: flex;
+  gap: 10px;
+}
+.product-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-icons img {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+}
+.product-d-details {
+  margin: 0 30px;
+  width: 40%;
+}
+.product-title {
+  font-size: 25px;
+}
+.brand-store {
+  margin-top: 5px;
+  color: #007185;
+  font-size: 14px;
+}
+
+.product-rating {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-rating div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-rating p {
+  color: #007185;
+}
+.product-rating p span {
+  color: #fff;
+  background: #c73500;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.product-rating h5 {
+  font-weight: 400;
+}
+.product-d-price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product-d-price div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.product-d-price div p {
+  font-size: 26px;
+  color: #c73500;
+}
+.product-d-price div h1 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.product-d-price div h1 span {
+  font-size: 26px;
+  font-weight: 500;
+}
+.product-d-price div h5 {
+  color: #c73500;
+  font-weight: 400;
+}
+.product-d-price h5 span {
+  text-decoration: line-through;
+}
+.product-d-price p span {
+  color: #007185;
+}
+.product-color-selection {
+  margin: 15px 0;
+}
+.product-color-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #cbcbcb;
+  gap: 10px;
+}
+.product-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+.product-description h1 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.product-description ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 30px;
+}
+.product-d-purchase {
+  width: 100%;
+  max-width: 280px;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.product-d-purchase .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-d-purchase .price {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.product-d-purchase .price span {
+  font-size: 26px;
+  padding: 2px;
+}
+.product-d-purchase .gap {
+  margin: 15px 0;
+}
+.product-d-purchase p span {
+  color: #007185;
+}
+.delivery-location {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.product-stock {
+  margin: 15px 0;
+  color: green;
+  font-weight: 400;
+}
+.product-quantity {
+  padding: 8px 5px;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  background: #efefef;
+  border-color: #c1c1c1;
+}
+.product-d-purchase .btn {
+  outline: none;
+  border: none;
+  background: #ffd814;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.product-d-purchase .product-buy {
+  background: #ffa41c;
+}
+.product-seller-info {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4px;
+  font-size: 14px;
+  color: #565656;
+}
+.product-seller-info span {
+  color: #007185;
+}
+
+.product-d-purchase hr {
+  margin: 20px 0;
+}
+.product-add-list {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  text-align: start;
+  background: white;
+  cursor: pointer;
+}
+
+/* media query */
+/* 
+@media only screen and (max-width: 900px) {
+  .product-display {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .product-icons {
+    display: none;
+  }
+  .product-main-image img {
+    width: 100%;
+    padding: 20px;
+  }
+  .option {
+    padding: 6px 8px;
+  }
+  .option p {
+    display: none;
+  }
+  .product-d-purchase {
+    max-width: 85%;
+    margin: 20px auto 10px;
+  }
+  .product-d-purchase p {
+    font-size: 10px;
+  }
+  .product-info p {
+    display: none;
+  }
+  .product-description {
+    display: none;
+  }
+  .product-rating {
+    display: none;
+  }
+  .product-title{
+    font-size: 18px;
+    
+  }
+
+} */
+
+/* Mobile responsiveness for screens smaller than 768px (Tablets and Phones) */
+@media screen and (max-width: 768px) {
+  /* Product Display - Stack elements vertically */
+  .product-display {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* Product images should take full width */
+  .product-d-image {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-icons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .product-main-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Product Details */
+  .product-d-details {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
+
+  .product-rating h5,
+  .product-d-price h5 {
+    font-size: 14px;
+  }
+
+  /* Price, Colors, and Purchase Box */
+  .product-d-price div h1 span {
+    font-size: 22px;
+  }
+
+  .product-d-purchase {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .product-d-purchase h1.price span {
+    font-size: 24px;
+  }
+
+  .product-color-options {
+    flex-direction: column;
+  }
+
+  /* Slider - Adjust product cards to display in full width */
+  .products {
+    overflow-x: scroll;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .product-card {
+    min-width: 200px;
+    flex-shrink: 0;
+  }
+
+  /* Footer */
+  .footer-middle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 15px;
+  }
+
+  /* Navigation */
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mobile-user-icon {
+    display: block;
+  }
+
+  /* Adjust elements in mobile nav */
+  .nav-bottom {
+    display: none;
+  }
+}
+
+/* Mobile screen below 480px (Small mobile devices) */
+@media screen and (max-width: 480px) {
+  /* Further reduce font size and padding */
+  .product-title {
+    font-size: 18px;
+  }
+
+  .product-d-price div h1 span {
+    font-size: 20px;
+  }
+
+  /* Product details and description */
+  .product-info p {
+    font-size: 14px;
+  }
+
+  .product-description h1 {
+    font-size: 18px;
+  }
+
+  .product-description ul li {
+    font-size: 14px;
+  }
+
+  /* Buttons */
+  button {
+    font-size: 14px;
+  }
+
+  .product-d-purchase .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .product-d-purchase h1.price span {
+    font-size: 22px;
+  }
+
+  /* Make footer more compact */
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column ul li {
+    font-size: 12px;
+  }
+}
+
+/* Extra small mobile devices - screens below 360px */
+@media screen and (max-width: 360px) {
+  /* Product title, reduce font size */
+  .product-title {
+    font-size: 16px;
+  }
+
+  /* Product details and description font-size */
+  .product-info p {
+    font-size: 12px;
+  }
+
+  .product-description h1 {
+    font-size: 16px;
+  }
+
+  .product-description ul li {
+    font-size: 12px;
+  }
+
+  /* Adjust the image sizes */
+  .product-main-image img {
+    width: 100%;
+    max-width: 300px; /* Reduce the maximum image width */
+  }
+
+  /* Price font size */
+  .product-d-price div h1 span {
+    font-size: 18px;
+  }
+
+  .product-d-purchase h1.price span {
+    font-size: 20px;
+  }
+
+  /* Buttons - reduce size */
+  button {
+    font-size: 12px;
+  }
+
+  .product-d-purchase .btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  /* Footer - even more compact */
+  .footer-column h3 {
+    font-size: 14px;
+  }
+
+  .footer-column ul li {
+    font-size: 10px;
+  }
+
+  /* Navigation adjustments */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-search {
+    width: 100%;
+  }
+
+  .mobile-user-icon {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Hide certain non-essential elements on very small screens */
+  .product-icons {
+    display: none;
+  }
+
+  /* Hide extra elements from footer */
+  .footer-bottom {
+    display: none;
+  }
+
+  /* Product slider, make sure cards fit the smaller screen */
+  .products {
+    gap: 10px;
+  }
+
+  .product-card {
+    min-width: 160px; /* Smaller product card width */
+  }
+}
+
+/* Extra small mobile devices - screens below 320px */
+@media screen and (max-width: 320px) {
+  /* Product title, reduce font size even further */
+  .product-title {
+    font-size: 14px;
+  }
+
+  /* Product details and description font-size */
+  .product-info p {
+    font-size: 10px;
+  }
+
+  .product-description h1 {
+    font-size: 14px;
+  }
+
+  .product-description ul li {
+    font-size: 10px;
+  }
+
+  /* Adjust the image sizes for very small screens */
+  .product-main-image img {
+    width: 100%;
+    max-width: 280px; /* Smaller image width for tiny screens */
+  }
+
+  /* Price font size */
+  .product-d-price div h1 span {
+    font-size: 16px;
+  }
+
+  .product-d-purchase h1.price span {
+    font-size: 18px;
+  }
+
+  /* Buttons - reduce size */
+  button {
+    font-size: 10px;
+  }
+
+  .product-d-purchase .btn {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  /* Footer - even more compact */
+  .footer-column h3 {
+    font-size: 12px;
+  }
+
+  .footer-column ul li {
+    font-size: 8px;
+  }
+
+  /* Navigation adjustments for smaller screens */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .mobile-user-icon {
+    display: block;
+    margin: 8px auto;
+  }
+
+  /* Hide more non-essential elements on tiny screens */
+  .product-icons {
+    display: none;
+  }
+
+  .footer-bottom {
+    display: none;
+  }
+
+  /* Product slider, smaller product card width */
+  .products {
+    gap: 8px;
+  }
+
+  .product-card {
+    min-width: 140px; /* Smaller product card width */
+  }
+
+  /* Reducing padding and margin */
+  .product-display {
+    padding: 5px;
+  }
+
+  .product-d-details {
+    margin: 15px 0;
+  }
+
+  .product-d-purchase {
+    margin-top: 15px;
+  }
+}

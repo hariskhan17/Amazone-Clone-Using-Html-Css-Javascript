@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logo {
+  margin-top: 20px;
+  display: block;
+}
+
+.signin-container {
+  max-width: 350px;
+  width: 90%; /* Adjusted for responsiveness */
+  border: 1px solid #d2d2d2;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for aesthetics */
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.signin-container:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.signin-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.input-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Glowing effect for input field when focused */
+.input-field:focus {
+  outline: none;
+  border-color: #ffd814;
+  box-shadow: 0px 0px 8px 2px rgba(255, 216, 20, 0.6); /* Glowing yellow effect */
+}
+
+.continue-btn {
+  width: 100%;
+  background-color: #ffd814;
+  color: #111;
+  padding: 10px;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #f7ca00;
+}
+
+p {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.link-text {
+  color: #0066c0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link-text:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+.signin-help {
+  font-size: 12px;
+  color: #0066c0;
+  cursor: pointer;
+}
+
+.signin-help:hover {
+  text-decoration: underline;
+}
+
+.signin-business {
+  font-size: 14px;
+  color: #0066c0;
+  cursor: pointer;
+}
+
+.signin-business:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+.signin-signup-btn {
+  background: lightgray;
+  font-size: 15px;
+  padding: 12px; /* Adjusted padding */
+  width: 100%; /* Full-width for responsiveness */
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-signup-btn:hover {
+  background: #f7ca00;
+}
+
+/* Responsive styling for tablets and smaller screens */
+@media only screen and (max-width: 768px) {
+  .signin-container {
+    width: 80%; /* Adjust width for tablets */
+    padding: 15px;
+  }
+
+  .signin-title {
+    font-size: 26px;
+  }
+
+  .continue-btn,
+  .signin-signup-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
+
+/* Responsive styling for mobile devices */
+@media only screen and (max-width: 480px) {
+  .signin-container {
+    width: 90%; /* Full width for mobile */
+    padding: 10px; /* Less padding for smaller screens */
+  }
+
+  .signin-title {
+    font-size: 22px; /* Smaller title for mobile */
+  }
+
+  .continue-btn,
+  .signin-signup-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .input-field {
+    padding: 8px;
+  }
+
+  p {
+    font-size: 10px; /* Smaller text for mobile */
+  }
+}
